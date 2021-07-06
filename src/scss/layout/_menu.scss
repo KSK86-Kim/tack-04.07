@@ -212,6 +212,7 @@
     justify-content: space-between;
     color: black;
     background-color: #ffffff00;
+
     @media screen and(max-width:767px) {
       margin: auto;
       margin-bottom: 71px;
@@ -219,18 +220,20 @@
       outline: none;
       border-radius: 0;
       width: 165px;
-
-      @media screen and(min-width:768px) {
-        width: 276px;
-      }
-      &:hover,
-      &:focus {
-        color: #ef826b;
-        background: none;
-      }
       & > span {
         display: none;
       }
+    }
+    @media screen and(min-width:768px) {
+      width: 276px;
+    }
+    @media screen and(min-width:1199px) {
+      width: 402px;
+    }
+    &:hover,
+    &:focus {
+      color: #ef826b;
+      background: none;
     }
   }
 }
