@@ -1,0 +1,21 @@
+.header {
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and(max-width:991px) {
+      height: 80px;
+    }
+
+    @media screen and (min-width: 992px) {
+      height: 130px;
+    }
+  }
+  &__svg {
+    position: absolute;
+    // top: 0;
+    right: 30px;
+  }
+}

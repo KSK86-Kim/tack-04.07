@@ -1,0 +1,127 @@
+.chef {
+  &__section {
+    @media screen and(max-width:767px) {
+      padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 100px;
+    }
+  }
+  &__container {
+    display: flex;
+    @media screen and(max-width:767px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__question {
+    font-style: italic;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+
+    @media screen and(max-width:1199px) {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.1875;
+    }
+    @media screen and(max-width:768px) {
+      margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      line-height: 1.208;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #000000;
+
+    @media screen and(max-width:1199px) {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    @media screen and(min-width: 1200px) {
+      font-size: 3rem;
+      line-height: 1.04;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      width: 40px;
+      height: 2px;
+      background-color: #000000;
+      transform: rotate(180deg);
+
+      @media screen and(max-width:767px) {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      @media screen and(max-width: 1199px) {
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+  &__discription {
+    @media screen and(max-width:767px) {
+      font-size: 0.73rem;
+    }
+  }
+  &__outline {
+    @media screen and(max-width:767px) {
+      order: 2;
+      text-align: center;
+    }
+  }
+  &__avatar {
+    @media screen and(max-width:767px) {
+      order: -1;
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      position: relative;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      min-width: 378px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      min-width: 488px;
+    }
+  }
+  &__img {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: -110px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      top: -120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: -160px;
+    }
+  }
+}
+
+// .qwe {
+//   background: chartreuse;
+// }

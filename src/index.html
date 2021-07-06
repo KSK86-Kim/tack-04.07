@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="main-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <title>Точка</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a
+          href="./index.html"
+          class="logo header__logo link"
+          aria-label="логотип веб студия"
+        >
+          <img src="./images/Logo.png" alt="Точка" />
+        </a>
+        <a href="#phone" class="header__svg">
+          <svg width="30px" height="36px">
+            <use
+              class="icon-phone"
+              href="./images/svg/icon.svg#icon-Icon_Phone"
+            ></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="gradient">
+        <section class="section hero__section">
+          <picture class="hero-back-img-fix">
+            <source
+              srcset="
+                ./images/main/hero/2/1x.png 1x,
+                ./images/main/hero/2/2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+
+            <source
+              srcset="
+                ./images/main/hero/1/1x.png 1x,
+                ./images/main/hero/1/2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              class="team__img"
+              src="./images/main/hero/1/1x.png"
+              srcset="
+                ./images/main/hero/1/1x.png 1x,
+                ./images/main/hero/1/2x.png 2x
+              "
+              alt="Игорь Демьяненко"
+            />
+          </picture>
+          <div class="container hero__container">
+            <h1 class="hero__title">ГАСТРО - БИСТРО</h1>
+            <p class="discription hero__discription">
+              Мы понравимся вам своей легкой атмосферой и уровнем кухни. Мы
+              любим простоту в интерьере, хорошую музыку и неповторимый вкус
+              наших блюд
+            </p>
+            <button
+              type="button"
+              class="button button--p45 hero__button hero__button--first"
+            >
+              <span>
+                <svg width="24px" height="14px">
+                  <use href="./images/svg/icon.svg#icon-Icon_order"></use>
+                </svg>
+              </span>
+              <p class="button__discription">Забронировать стол</p>
+            </button>
+            <button
+              type="button"
+              class="button button--p25 hero__button hero__button--second"
+            >
+              <span>
+                <svg width="24px" height="14px">
+                  <use href="./images/svg/icon.svg#icon-Icon_order"></use>
+                </svg>
+              </span>
+              <p class="button__discription">Забронировать мероприятие</p>
+            </button>
+          </div>
+        </section>
+        <section class="section chef__section qwe">
+          <div class="container chef__container">
+            <div class="chef__outline">
+              <p class="chef__question">Если цель не еда, то что?</p>
+              <h2 class="chef__title">
+                Шеф-повар <br />
+                Сергей Громов
+              </h2>
+              <p class="discription chef__discription">
+                Как меня зовут Вы уже прочли. Я из Санкт-Петербурга, с детских
+                лет увлекался экспериментами на кухне. Хотел написать, что
+                работаю Шефом около десяти лет, но потом понял, что не ощущаю
+                это работой и точно не помню сколько лет. Это больше чем хобби
+                или просто увлечение, я этим живу. На кухне люблю порядок,
+                работаем только на самых свежих продуктах и акцентируемая на
+                деталях. Вообщем, думаю достаточно писанины. Приходите пробывать
+                наши блюда в осеннем меню.
+              </p>
+            </div>
+            <div class="chef__avatar">
+              <img
+                class="chef__img"
+                src="./images/main/chef/Photo + Gradient.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section poster__section">
+        <div class="container poster__container">
+          <h2 class="poster__title">Пару фотографий с нашего заведения</h2>
+          <a class="poster__button" href="#menu">
+            <svg>
+              <use href="./images/svg/icon.svg#icon-Icon_Mouse"></use>
+            </svg>
+            <p style="display: block">Листайте далее</p>
+          </a>
+        </div>
+      </section>
+      <section class="section menu__section" id="menu">
+        <div class="menu__container">
+          <h2 class="menu__title" hidden></h2>
+          <ul class="list menu__list">
+            <li class="menu__item">
+              <span class="menu__decoration"></span>
+              <div class="container menu__item--wrapper">
+                <picture class="menu__picture">
+                  <source
+                    srcset="
+                      ./images/main/dish/1/1x/Photo-3.png 1x,
+                      ./images/main/dish/1/2x/Photo-3.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/png"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/main/dish/1/1x/Photo-2.png 1x,
+                      ./images/main/dish/1/2x/Photo-2.png 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/dish/1/1x/Photo-1.png 1x,
+                      ./images/main/dish/1/2x/Photo-1.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/main/dish/1/1x/Photo-1.png"
+                    srcset="
+                      ./images/main/dish/1/1x/Photo-1.png 1x,
+                      ./images/main/dish/1/1x/Photo-1.png 2x
+                    "
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
+                <div class="dish__wrapper">
+                  <h3 class="dish__title">Вкус каким он должен быть</h3>
+                  <p class="discription dish__discription">
+                    Мы обновляем меню каждые три месяца, готовим блюда различных
+                    кухонь мира. У нас всегда можно вкусно позавтракать, сытно
+                    пообедать и вальяжно поужинать.
+                  </p>
+                  <a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwit9NfMms_xAhXwtYsKHfRGA5wQFjAAegQIBhAD&url=https%3A%2F%2Fwww.okbhmao.ru%2Fdownload.php%3Ffile%3D12021&usg=AOvVaw3sqftl5oWg2K5yWT1uyazN"
+                    class="button dish__button dish-mobile"
+                    download
+                    target="_blank"
+                  >
+                    <span>
+                      <svg width="24px" height="14px">
+                        <use href="./images/svg/icon.svg#icon-Icon_order"></use>
+                      </svg>
+                    </span>
+                    <p class="button__discription">Посмотреть меню PDF</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="container menu__item--wrapper">
+                <picture class="menu__picture">
+                  <source
+                    srcset="
+                      ./images/main/dish/2/1x/Photo-3.png 1x,
+                      ./images/main/dish/2/2x/Photo-3.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/png"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/main/dish/2/1x/Photo-2.png 1x,
+                      ./images/main/dish/2/2x/Photo-2.png 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/dish/2/1x/Photo-1.png 1x,
+                      ./images/main/dish/2/2x/Photo-1.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/main/dish/1/1x/Photo-1.png"
+                    srcset="
+                      ./images/main/dish/2/1x/Photo-1.png 1x,
+                      ./images/main/dish/2/1x/Photo-1.png 2x
+                    "
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
+                <div class="dish__wrapper">
+                  <h3 class="dish__title">Класика и авторские решения</h3>
+                  <p class="discription dish__discription">
+                    Большой выбор заварных чаев и авторских напитков не оставит
+                    вас равнодушными. Мы часто обновляем меню, добавляя сезонные
+                    новинки.
+                  </p>
+                  <a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwit9NfMms_xAhXwtYsKHfRGA5wQFjAAegQIBhAD&url=https%3A%2F%2Fwww.okbhmao.ru%2Fdownload.php%3Ffile%3D12021&usg=AOvVaw3sqftl5oWg2K5yWT1uyazN"
+                    class="button dish__button dish-mobile"
+                    download
+                  >
+                    <span>
+                      <svg width="24px" height="14px">
+                        <use href="./images/svg/icon.svg#icon-Icon_order"></use>
+                      </svg>
+                    </span>
+                    <p class="button__discription">Посмотреть меню PDF</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="container menu__item--wrapper">
+                <picture class="menu__picture">
+                  <source
+                    srcset="
+                      ./images/main/dish/3/1x/Photo-3.png 1x,
+                      ./images/main/dish/3/2x/Photo-3.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/png"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/main/dish/3/1x/Photo-2.png 1x,
+                      ./images/main/dish/3/2x/Photo-2.png 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/dish/3/1x/Photo-1.png 1x,
+                      ./images/main/dish/3/2x/Photo-1.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/main/dish/1/1x/Photo-1.png"
+                    srcset="
+                      ./images/main/dish/3/1x/Photo-1.png 1x,
+                      ./images/main/dish/3/1x/Photo-1.png 2x
+                    "
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
+                <div class="dish__wrapper">
+                  <h3 class="dish__title">
+                    Дни рождения, фуршеты, корпоративы, свадьбы, бизнес-завтраки
+                  </h3>
+                  <p class="discription dish__discription">
+                    Мы любим проводить мероприятия, потому что у нас есть все
+                    условия. Отдельно стоящий лофт, большая веранда, возможность
+                    шуметь всю ночь, своя кухня, банкетные менеджеры любящие
+                    свое дело. Это все что нужно для идеального праздника.
+                  </p>
+                  <button
+                    type="button"
+                    class="button dish__button dish__button--last"
+                  >
+                    <span>
+                      <svg width="24px" height="14px">
+                        <use href="./images/svg/icon.svg#icon-Icon_order"></use>
+                      </svg>
+                    </span>
+                    <p class="button__discription">Подробнее</p>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section google-map__section">
+        <div class="google-map__container">
+          <h2 class="google-map__title"></h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.7998703879925!2d37.65227151592887!3d55.70985038054192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b33f224fd5b%3A0x72cee4b0bb4e8d15!2z0YPQuy4g0JvQtdC90LjQvdGB0LrQsNGPINCh0LvQvtCx0L7QtNCwLCAyNiwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDExNTI4MA!5e0!3m2!1sru!2sua!4v1625488474243!5m2!1sru!2sua"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper--left">
+          <h2 class="footer__title">По вопросам брони столов и мероприятий</h2>
+          <a href="tel:+74954141033" class="footer__link link" id="phone">
+            +7 (495) 414-10-33
+          </a>
+        </div>
+        <div class="footer__wrapper--right">
+          <address class="footer-contacts">
+            <ul class="footer-contacts__list list">
+              <li class="footer-contacts__item">
+                <p>Время работы ежедневно: 10:00 - 22:00</p>
+              </li>
+              <li class="footer-contacts__item">
+                <a
+                  href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%A1%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D0%B0,+26+%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5+21,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+115280/data=!4m2!3m1!1s0x46b54b3174265399:0x736c0e2d0ae58c63?sa=X&ved=2ahUKEwi367iA48zxAhXvxIsKHcHrB2sQ8gEwAHoECBEQAQ"
+                  class="footer-contacts__link link"
+                >
+                  Ленинская Слобода 26с21
+                </a>
+              </li>
+              <li class="footer-contacts__item">
+                <a
+                  href="mailto:tochkacafemsk@yandex.ru"
+                  class="footer-contacts__link link"
+                >
+                  tochkacafemsk@yandex.ru
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <div class="join">
+            <ul class="join__list list">
+              <li class="join__item">
+                <a class="join__link" href="" aria-label="instagram">
+                  <svg class="join__svg" width="20px" height="20px">
+                    <use href="./images/svg/icon.svg#icon--instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__link" href="" aria-label="telegram"
+                  ><svg class="join__svg" width="20px" height="20px">
+                    <use href="./images/svg/icon.svg#icon-telegram"></use></svg
+                ></a>
+              </li>
+              <li class="join__item">
+                <a class="join__link" href="" aria-label="phone"
+                  ><svg class="join__svg" width="20px" height="20px">
+                    <use href="./images/svg/icon.svg#icon--phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__link" href="" aria-label="viber"
+                  ><svg class="join__svg" width="20px" height="20px">
+                    <use href="./images/svg/icon.svg#icon--viber"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span footer-copy__title> Copyright 2020 </span>
+      </div>
+    </footer>
+  </body>
+</html>

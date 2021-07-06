@@ -1,0 +1,96 @@
+.poster {
+  &__section {
+    padding-bottom: 66px;
+    background-image: url(https://i.imgur.com/a90QrXz.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+
+    @media screen and(max-width: 767px) {
+      padding-top: 40px;
+      padding-bottom: 25px;
+      background-image: url(https://i.imgur.com/a90QrXz.jpg);
+    }
+
+    @media screen and (min-width: 768px) and(max-width: 1199px) {
+      padding-top: 70px;
+      padding-bottom: 42px;
+      background-image: url(https://i.imgur.com/bZjzVVj.jpg);
+    }
+    @media screen and(max-width:1199px) {
+      min-height: 640px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 102px;
+      padding-bottom: 72px;
+      min-height: 934px;
+      background-image: url(https://i.imgur.com/u7sbEfL.jpg);
+    }
+  }
+  // background 2x mobile
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   background-image: url();
+  // }
+
+  // background 2x tablet
+  // @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  //   screen and (min-resolution: 192dpi) and (min-width: 768px),
+  //   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  //   background-image: url();
+  // }
+  &__title {
+    font-weight: 700;
+    color: #ffffff;
+    @media screen and(max-width:1199px) {
+      font-size: 1.75rem;
+      line-height: 1.07;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 3rem;
+      line-height: 1.04;
+    }
+  }
+  &__button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 50%;
+    transform: translate(50%, 0);
+
+    @media screen and(max-width:767px) {
+      bottom: 25px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      bottom: 42px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      bottom: 72px;
+    }
+
+    & > svg {
+      width: 32px;
+      height: 50px;
+
+      margin-bottom: 15px;
+    }
+    & > p {
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 1rem;
+      line-height: 1.1875;
+    }
+  }
+}
