@@ -17,7 +17,6 @@
       @media screen and (min-width: 1200px) {
         width: 60%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
       }
     }
@@ -64,6 +63,7 @@
 }
 
 .footer-contacts {
+  font-style: normal;
   @media screen and(max-width: 1199px) {
     margin-bottom: 20px;
   }
@@ -115,6 +115,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    font-size: 1rem;
+    line-height: 0.625;
   }
 }
 

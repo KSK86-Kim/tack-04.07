@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
     <link
@@ -64,7 +64,7 @@
                 ./images/main/hero/1/1x.png 1x,
                 ./images/main/hero/1/2x.png 2x
               "
-              alt="Игорь Демьяненко"
+              alt="4 очень вкусных блюд"
             />
           </picture>
           <div class="container hero__container">
@@ -74,39 +74,26 @@
               любим простоту в интерьере, хорошую музыку и неповторимый вкус
               наших блюд
             </p>
-            <button
-              type="button"
-              class="button button--p45 hero__button hero__button--first"
-            >
-              <span>
+            <button type="button" class="button hero__button hero__button--p45">
+              <span class="button__svg button__svg--fix">
                 <svg width="24px" height="14px">
                   <use href="./images/svg/icon.svg#icon-Icon_order"></use>
                 </svg>
               </span>
-              <p class="button__discription">Забронировать стол</p>
+              <span class="button__discription">Забронировать стол</span>
             </button>
-            <button
-              type="button"
-              class="button button--p25 hero__button hero__button--second"
-            >
-              <span>
-                <svg width="24px" height="14px">
-                  <use href="./images/svg/icon.svg#icon-Icon_order"></use>
-                </svg>
-              </span>
-              <p class="button__discription">Забронировать мероприятие</p>
-            </button>
+            <p class="hero__order">Количество свободных столиков: 2</p>
           </div>
         </section>
-        <section class="section chef__section qwe">
+        <section class="section chef__section">
           <div class="container chef__container">
-            <div class="chef__outline">
-              <p class="chef__question">Если цель не еда, то что?</p>
-              <h2 class="chef__title">
+            <div class="chef-summary__wrapper">
+              <p class="chef-summary__question">Если цель не еда, то что?</p>
+              <h2 class="chef-summary__title">
                 Шеф-повар <br />
                 Сергей Громов
               </h2>
-              <p class="discription chef__discription">
+              <p class="discription chef-summary__discription">
                 Как меня зовут Вы уже прочли. Я из Санкт-Петербурга, с детских
                 лет увлекался экспериментами на кухне. Хотел написать, что
                 работаю Шефом около десяти лет, но потом понял, что не ощущаю
@@ -117,12 +104,35 @@
                 наши блюда в осеннем меню.
               </p>
             </div>
-            <div class="chef__avatar">
-              <img
-                class="chef__img"
-                src="./images/main/chef/Photo + Gradient.png"
-                alt=""
-              />
+            <div class="chef-avatar__wrapper">
+              <picture class="chef-avatar__img">
+                <source
+                  srcset="
+                    ./images/main/chef/3/1x.png 1x,
+                    ./images/main/chef/3/2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+
+                <source
+                  srcset="
+                    ./images/main/chef/2/1x.png 1x,
+                    ./images/main/chef/2/2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <img
+                  class="team__img"
+                  src="./images/main/chef/1/1x.png"
+                  srcset="
+                    ./images/main/chef/1/1x.png 1x,
+                    ./images/main/chef/1/2x.png 2x
+                  "
+                  alt="Сергей Громов"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -134,22 +144,22 @@
             <svg>
               <use href="./images/svg/icon.svg#icon-Icon_Mouse"></use>
             </svg>
-            <p style="display: block">Листайте далее</p>
+            <span>Листайте далее</span>
           </a>
         </div>
       </section>
       <section class="section menu__section" id="menu">
         <div class="menu__container">
           <h2 class="menu__title" hidden></h2>
+          <span class="menu__decoration"></span>
           <ul class="list menu__list">
             <li class="menu__item">
-              <span class="menu__decoration"></span>
               <div class="container menu__item--wrapper">
                 <picture class="menu__picture">
                   <source
                     srcset="
-                      ./images/main/dish/1/1x/Photo-3.png 1x,
-                      ./images/main/dish/1/2x/Photo-3.png 2x
+                      ./images/main/dish/1/1x/3.png 1x,
+                      ./images/main/dish/1/2x/3.png 2x
                     "
                     media="(min-width: 1200px)"
                     type="image/png"
@@ -157,27 +167,27 @@
 
                   <source
                     srcset="
-                      ./images/main/dish/1/1x/Photo-2.png 1x,
-                      ./images/main/dish/1/2x/Photo-2.png 2x
+                      ./images/main/dish/1/1x/2.png 1x,
+                      ./images/main/dish/1/2x/2.png 2x
                     "
                     media="(min-width: 768px)"
                     type="image/png"
                   />
                   <source
                     srcset="
-                      ./images/main/dish/1/1x/Photo-1.png 1x,
-                      ./images/main/dish/1/2x/Photo-1.png 2x
+                      ./images/main/dish/1/1x/1.png 1x,
+                      ./images/main/dish/1/2x/1.png 2x
                     "
                     type="image/png"
                   />
                   <img
                     class="team__img"
-                    src="./images/main/dish/1/1x/Photo-1.png"
+                    src="./images/main/dish/1/1x/1.png"
                     srcset="
-                      ./images/main/dish/1/1x/Photo-1.png 1x,
-                      ./images/main/dish/1/1x/Photo-1.png 2x
+                      ./images/main/dish/1/1x/1.png 1x,
+                      ./images/main/dish/1/2x/1.png 2x
                     "
-                    alt="Игорь Демьяненко"
+                    alt="..."
                   />
                 </picture>
                 <div class="dish__wrapper">
@@ -189,16 +199,17 @@
                   </p>
                   <a
                     href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwit9NfMms_xAhXwtYsKHfRGA5wQFjAAegQIBhAD&url=https%3A%2F%2Fwww.okbhmao.ru%2Fdownload.php%3Ffile%3D12021&usg=AOvVaw3sqftl5oWg2K5yWT1uyazN"
-                    class="button dish__button dish-mobile"
+                    class="button-link"
                     download
-                    target="_blank"
                   >
-                    <span>
+                    <span class="button-link__span-svg button__svg--fix">
                       <svg width="24px" height="14px">
                         <use href="./images/svg/icon.svg#icon-Icon_order"></use>
                       </svg>
                     </span>
-                    <p class="button__discription">Посмотреть меню PDF</p>
+                    <span class="button-link__discription"
+                      >Посмотреть меню PDF</span
+                    >
                   </a>
                 </div>
               </div>
@@ -208,8 +219,8 @@
                 <picture class="menu__picture">
                   <source
                     srcset="
-                      ./images/main/dish/2/1x/Photo-3.png 1x,
-                      ./images/main/dish/2/2x/Photo-3.png 2x
+                      ./images/main/dish/2/1x/3.png 1x,
+                      ./images/main/dish/2/2x/3.png 2x
                     "
                     media="(min-width: 1200px)"
                     type="image/png"
@@ -217,27 +228,27 @@
 
                   <source
                     srcset="
-                      ./images/main/dish/2/1x/Photo-2.png 1x,
-                      ./images/main/dish/2/2x/Photo-2.png 2x
+                      ./images/main/dish/2/1x/2.png 1x,
+                      ./images/main/dish/2/2x/2.png 2x
                     "
                     media="(min-width: 768px)"
                     type="image/png"
                   />
                   <source
                     srcset="
-                      ./images/main/dish/2/1x/Photo-1.png 1x,
-                      ./images/main/dish/2/2x/Photo-1.png 2x
+                      ./images/main/dish/2/1x/1.png 1x,
+                      ./images/main/dish/2/2x/1.png 2x
                     "
                     type="image/png"
                   />
                   <img
                     class="team__img"
-                    src="./images/main/dish/1/1x/Photo-1.png"
+                    src="./images/main/dish/1/1x/1.png"
                     srcset="
-                      ./images/main/dish/2/1x/Photo-1.png 1x,
-                      ./images/main/dish/2/1x/Photo-1.png 2x
+                      ./images/main/dish/2/1x/1.png 1x,
+                      ./images/main/dish/2/2x/1.png 2x
                     "
-                    alt="Игорь Демьяненко"
+                    alt="..."
                   />
                 </picture>
                 <div class="dish__wrapper">
@@ -249,15 +260,17 @@
                   </p>
                   <a
                     href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwit9NfMms_xAhXwtYsKHfRGA5wQFjAAegQIBhAD&url=https%3A%2F%2Fwww.okbhmao.ru%2Fdownload.php%3Ffile%3D12021&usg=AOvVaw3sqftl5oWg2K5yWT1uyazN"
-                    class="button dish__button dish-mobile"
+                    class="button-link"
                     download
                   >
-                    <span>
+                    <span class="button-link__span-svg button__svg--fix">
                       <svg width="24px" height="14px">
                         <use href="./images/svg/icon.svg#icon-Icon_order"></use>
                       </svg>
                     </span>
-                    <p class="button__discription">Посмотреть меню PDF</p>
+                    <span class="button-link__discription"
+                      >Посмотреть меню PDF</span
+                    >
                   </a>
                 </div>
               </div>
@@ -267,8 +280,8 @@
                 <picture class="menu__picture">
                   <source
                     srcset="
-                      ./images/main/dish/3/1x/Photo-3.png 1x,
-                      ./images/main/dish/3/2x/Photo-3.png 2x
+                      ./images/main/dish/3/1x/3.png 1x,
+                      ./images/main/dish/3/2x/3.png 2x
                     "
                     media="(min-width: 1200px)"
                     type="image/png"
@@ -276,27 +289,27 @@
 
                   <source
                     srcset="
-                      ./images/main/dish/3/1x/Photo-2.png 1x,
-                      ./images/main/dish/3/2x/Photo-2.png 2x
+                      ./images/main/dish/3/1x/2.png 1x,
+                      ./images/main/dish/3/2x/2.png 2x
                     "
                     media="(min-width: 768px)"
                     type="image/png"
                   />
                   <source
                     srcset="
-                      ./images/main/dish/3/1x/Photo-1.png 1x,
-                      ./images/main/dish/3/2x/Photo-1.png 2x
+                      ./images/main/dish/3/1x/1.png 1x,
+                      ./images/main/dish/3/2x/1.png 2x
                     "
                     type="image/png"
                   />
                   <img
                     class="team__img"
-                    src="./images/main/dish/1/1x/Photo-1.png"
+                    src="./images/main/dish/1/1x/1.png"
                     srcset="
-                      ./images/main/dish/3/1x/Photo-1.png 1x,
-                      ./images/main/dish/3/1x/Photo-1.png 2x
+                      ./images/main/dish/3/1x/1.png 1x,
+                      ./images/main/dish/3/2x/1.png 2x
                     "
-                    alt="Игорь Демьяненко"
+                    alt="..."
                   />
                 </picture>
                 <div class="dish__wrapper">
@@ -313,12 +326,12 @@
                     type="button"
                     class="button dish__button dish__button--last"
                   >
-                    <span>
+                    <span class="button__svg button__svg--fix">
                       <svg width="24px" height="14px">
                         <use href="./images/svg/icon.svg#icon-Icon_order"></use>
                       </svg>
                     </span>
-                    <p class="button__discription">Подробнее</p>
+                    <span class="button__discription">Подробнее</span>
                   </button>
                 </div>
               </div>

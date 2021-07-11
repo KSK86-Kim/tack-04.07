@@ -3,19 +3,36 @@
     @media screen and(max-width:767px) {
       padding-bottom: 50px;
     }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding-bottom: 60px;
+    @media screen and(min-width: 768px) and(max-width:1199px) {
+      padding-bottom: 66px;
     }
-
-    @media screen and (min-width: 1200px) {
+    @media screen and(min-width:1200px) {
+      margin-top: -53px;
       padding-bottom: 100px;
     }
   }
   &__container {
     display: flex;
+
     @media screen and(max-width:767px) {
       flex-wrap: wrap;
+    }
+  }
+}
+
+.chef-summary {
+  &__wrapper {
+    @media screen and(max-width:767px) {
+      order: 2;
+      text-align: center;
+    }
+    @media screen and(min-width: 768px) and(max-width: 1199px) {
+      padding-top: 73px;
+      margin-right: 24px;
+    }
+    @media screen and(min-width:1200px) {
+      padding-top: 172px;
+      margin-right: 82px;
     }
   }
   &__question {
@@ -44,13 +61,13 @@
     color: #000000;
 
     @media screen and(max-width:1199px) {
-      font-size: 1rem;
-      line-height: 1.25;
+      font-size: 1.75rem;
+      line-height: 1.071428571428571;
     }
 
     @media screen and(min-width: 1200px) {
       font-size: 3rem;
-      line-height: 1.04;
+      line-height: 1.041666666666667;
     }
 
     &::after {
@@ -78,50 +95,30 @@
     }
   }
   &__discription {
-    @media screen and(max-width:767px) {
-      font-size: 0.73rem;
-    }
-  }
-  &__outline {
-    @media screen and(max-width:767px) {
-      order: 2;
-      text-align: center;
-    }
-  }
-  &__avatar {
-    @media screen and(max-width:767px) {
-      order: -1;
-      margin-bottom: 10px;
-    }
-    @media screen and (min-width: 768px) {
-      position: relative;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      min-width: 378px;
+    font-weight: 400;
+    @media screen and(max-width:1199px) {
+      font-size: 1rem;
+      line-height: 1.25;
     }
 
-    @media screen and (min-width: 1200px) {
-      min-width: 488px;
-    }
-  }
-  &__img {
-    width: 100%;
-
-    @media screen and (min-width: 768px) {
-      position: absolute;
-      top: -110px;
-    }
-
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      top: -120px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      top: -160px;
+    @media screen and(min-width: 1200px) {
+      font-size: 1.5rem;
+      line-height: 1.041666666666667;
     }
   }
 }
 
-// .qwe {
-//   background: chartreuse;
-// }
+.chef-avatar {
+  &__wrapper {
+    width: 100%;
+  }
+  &__img {
+    display: block;
+
+    & > img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
